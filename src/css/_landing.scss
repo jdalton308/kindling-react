@@ -1,0 +1,86 @@
+
+.title-search-cont {
+	h1 {
+		margin: 0 0 20px;
+	}
+
+	.search-cont {
+		text-align: center;
+	}
+
+	label.search {
+		display: inline-block;
+		width: 300px;
+		text-align: left;
+
+		.label-copy {
+			display: block;
+			color: $grey;
+			text-align: center;
+		}
+		.input-cont {
+			display: flex;
+		}
+		input {
+			flex: 0 0 90%;
+			display: inline-block;
+			padding: 10px 15px;
+			font-size: 1rem;
+		}
+		button {
+			flex: 0 0 10%;
+			padding: 9px 5px;
+			background-color: $green;
+			color: $white;
+			border: 2px solid $white;
+		}
+	}
+
+	.search-results {
+		max-width: 800px;
+		margin: 40px auto 0;
+
+		.result {
+			display: inline-flex;
+			width: 350px;
+			margin: 0 20px 20px;
+			padding: 10px 15px;
+			background-color: $white;
+			box-shadow: 2px 2px 10px -1px $black;
+			text-align: left;
+			cursor: pointer;
+			@include transition();
+
+			&:hover {
+				box-shadow: 1px 1px 10px -3px $black;
+				background-color: $off-white;
+			}
+
+			.result-symbol {
+				flex: 1 1 50%;
+				display: inline-block;
+				vertical-align: top;
+				font-size: 2.2rem;
+				line-height: 1em;
+				color: $green;
+			}
+			.result-name-exchange {
+				flex: 1 1 50%;
+				display: inline-block;
+				color: $grey;
+				padding-top: 3px;
+				
+				span {
+					display: block;
+					margin-bottom: 5px;
+					font-size: 0.7rem;
+
+					&:last-child {
+						color: $light-grey;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
