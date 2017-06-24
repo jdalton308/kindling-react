@@ -1,7 +1,7 @@
 {
-  "name": "stock-lock",
+  "name": "",
   "version": "1.0.0",
-  "description": "Stock ticker app",
+  "description": "",
   "main": "bundle.js",
   "dependencies": {},
   "devDependencies": {
@@ -18,20 +18,22 @@
     "react-dom": "^15.3.2",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2",
+    "webpack": "^2.0.2",
     "webpack-dev-server": "^1.16.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdalton308/stock-lock.git"
+    "url": "git+https://github.com/jdalton308/kindling-react.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jdalton308/stock-lock/issues"
+    "url": "https://github.com/jdalton308/kindling-react/issues"
   },
-  "homepage": "https://github.com/jdalton308/stock-lock#readme"
+  "homepage": "https://github.com/jdalton308/kindling-react#readme"
 }
